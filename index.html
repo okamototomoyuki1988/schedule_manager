@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCwQsSxjN8cwrj4oKLWVyx4FmHxtlKb_z0",
+            authDomain: "todo-abc60.firebaseapp.com",
+            databaseURL: "https://todo-abc60.firebaseio.com",
+            projectId: "todo-abc60",
+            storageBucket: "",
+            messagingSenderId: "856197355352",
+            appId: "1:856197355352:web:1176e92c2717e224"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"
+        integrity="sha256-r2i+bPjselDztQN4Z4P9MvibdQaw/AVKp37mJx9BeZo=" crossorigin="anonymous"></script>
+    <script src="./lib.js"></script>
+    <script src="./src.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            作業
+            <label><input type="number" class="hpd" />時/日</label>
+            <label><input type="checkbox" class="wk-w" />平日</label>
+            <label><input type="checkbox" class="wk-h" />休日</label>
+        </div>
+        <div class="blank">
+            <div>✔</div>
+            <div></div>
+        </div>
+        <div class="days">
+            <div class="month">
+                <div>1</div>
+            </div>
+            <div class="day">
+                <div>11</div>
+                <div>11</div>
+                <div>11</div>
+            </div>
+        </div>
+        <div class="keys">
+            <div class="text">
+                <textarea wrap="off"></textarea>
+            </div>
+            <div><input type="checkbox" /></div>
+            <div><input type="checkbox" /></div>
+            <div><input type="checkbox" /></div>
+            <div><input type="checkbox" /></div>
+        </div>
+        <div class="datas">
+            <div class="row">
+                <div>●</div>
+                <div>●</div>
+                <div>●</div>
+                <div>●</div>
+                <div>●</div>
+            </div>
+            <div class="row">
+                <div>●</div>
+                <div>●</div>
+                <div>●</div>
+                <div>●</div>
+                <div>●</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
